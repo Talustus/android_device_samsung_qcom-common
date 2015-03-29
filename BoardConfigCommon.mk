@@ -22,6 +22,7 @@ TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
+TARGET_CPU_VARIANT := cortex-a15
 TARGET_ARCH_VARIANT := armv7-a-neon
 
 # Charger
@@ -36,7 +37,7 @@ TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 
 # Healthd
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.qcom
+# BOARD_HAL_STATIC_LIBRARIES := libhealthd.qcom
 
 # Qualcomm support
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
